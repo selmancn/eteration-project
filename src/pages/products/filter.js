@@ -76,17 +76,17 @@ export default function Filter() {
         <span className="text-muted align-self-start ms-1">Sırala</span>
         <Card className="p-0.5 mb-2 shadow-sm bg-white rounded">
           <CardBody className="p-2">
-            <FormGroup check>
-              <Input name="radio1" value={"ph"} onChange={changeOrder} checked={selectedOrder === "ph"} type="radio" /> <Label style={{ fontSize: "1.4vw" }}>En yüksek fiyat</Label>
+            <FormGroup check style={{ textAlign: "left" }}>
+              <Input name="radio1" value={"ph"} onChange={changeOrder} checked={selectedOrder === "ph"} type="radio" /> <Label style={{ fontSize: "max(1vw, 15px)" }}>En yüksek fiyat</Label>
             </FormGroup>
-            <FormGroup check>
-              <Input name="radio1" value={"pl"} onChange={changeOrder} checked={selectedOrder === "pl"} type="radio" /> <Label style={{ fontSize: "1.4vw" }}>En düşük fiyat</Label>
+            <FormGroup check style={{ textAlign: "left" }}>
+              <Input name="radio1" value={"pl"} onChange={changeOrder} checked={selectedOrder === "pl"} type="radio" /> <Label style={{ fontSize: "max(1vw, 15px)" }}>En düşük fiyat</Label>
             </FormGroup>
-            <FormGroup check>
-              <Input name="radio1" value={"fn"} onChange={changeOrder} checked={selectedOrder === "fn"} type="radio" /> <Label style={{ fontSize: "1.4vw" }}>En yeni</Label>
+            <FormGroup check style={{ textAlign: "left" }}>
+              <Input name="radio1" value={"fn"} onChange={changeOrder} checked={selectedOrder === "fn"} type="radio" /> <Label style={{ fontSize: "max(1vw, 15px)" }}>En yeni</Label>
             </FormGroup>
-            <FormGroup check>
-              <Input name="radio1" value={"fo"} onChange={changeOrder} checked={selectedOrder === "fo"} type="radio" /> <Label style={{ fontSize: "1.4vw" }}>En eski</Label>
+            <FormGroup check style={{ textAlign: "left" }}>
+              <Input name="radio1" value={"fo"} onChange={changeOrder} checked={selectedOrder === "fo"} type="radio" /> <Label style={{ fontSize: "max(1vw, 15px)" }}>En eski</Label>
             </FormGroup>
           </CardBody>
         </Card>

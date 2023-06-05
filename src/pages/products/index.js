@@ -93,7 +93,7 @@ export default function Products(props) {
 
   return (
     <div className="row">
-      <div className="col-md-3 col-lg-2 col-xl-2 text-center d-sm-none d-md-block">
+      <div className="col-md-3 col-lg-2 col-xl-2 text-center d-none d-md-block">
         <div>
           <Filter />
         </div>
@@ -104,7 +104,7 @@ export default function Products(props) {
           <div className="col-md-12 p-4">{renderPagination()}</div>
         </div>
       </div>
-      <div className="col-md-3 col-lg-2 col-xl-2 text-center d-sm-none d-md-block">
+      <div className="col-md-3 col-lg-2 col-xl-2 text-center d-none d-md-block">
         <ShoppingCard />
       </div>
     </div>

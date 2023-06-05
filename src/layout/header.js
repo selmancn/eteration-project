@@ -4,6 +4,7 @@ import { BsBasketFill } from "react-icons/bs";
 import { cardTotalPrice } from "../helpers/product-helper";
 import ShoppingCard from "../pages/products/card";
 import { LayoutContext } from "./layout";
+import Filter from "../pages/products/filter";
 
 export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function Header(props) {
     <Navbar expand={"md"} sticky="top" color="white">
       <NavbarBrand href="/">Eteration</NavbarBrand>
       <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
+      <Collapse className="" isOpen={isOpen} navbar>
         <Nav className="me-auto d-flex w-100 justify-content-between align-items-center" navbar>
           <NavItem>
             <NavLink href="/">Ürünler</NavLink>
@@ -43,10 +44,12 @@ export default function Header(props) {
               {totalPrice}₺
             </NavLink>
           </NavItem>
-          <NavItem className="d-md-none d-sm-row row">
-            <div className="col">{/* <Filter /> */}</div>
+          <NavItem className="d-md-none d-sm-row row flex-column">
             <div className="col d-flex text-center">
               <ShoppingCard />
+            </div>
+            <div className="col">
+              <Filter />
             </div>
           </NavItem>
         </Nav>

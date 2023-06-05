@@ -50,7 +50,7 @@ export default function ShoppingCard() {
   };
 
   return (
-    <div>
+    <div className="w-100">
       <Card className="p-0.5 mb-2 shadow-sm bg-white rounded">
         <CardBody
           style={{
@@ -90,7 +90,7 @@ export default function ShoppingCard() {
             <span>{totalPrice}₺</span>
           </div>
           <div>
-            <Button color="primary" className="w-75" style={{ fontSize: "1.3vw" }}>
+            <Button color="primary" className="w-75" style={{ fontSize: "max(1vw, 15px)" }}>
               Ödeme Yap
             </Button>
           </div>
