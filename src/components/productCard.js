@@ -1,6 +1,7 @@
 import { Button, Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import { addToCardItem } from "../helpers/product-helper";
+import React from "react";
 
 export default function ProductCard({ item }) {
   let navigate = useNavigate();
